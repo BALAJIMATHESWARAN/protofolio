@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balaji S K M | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home-section" id="home">
+    <div class="intro">
+      <h1>Balaji S K M</h1>
+      <p>Aspiring AI & ML Engineer | 3rd Year AIML Dept</p>
+      <button onclick="scrollToProjects()">Explore My Projects</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate AI & ML enthusiast currently in my 3rd year at BITSathy. I enjoy working on real-world projects that solve practical problems using AI and machine learning. 
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>Number Plate Detection</h3>
+        <p>A real-time number plate recognition system using computer vision.</p>
+        <p><strong>Tech:</strong> Python, OpenCV</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Parking Surveillance</h3>
+        <p>Automated parking system that records vehicle entry/exit times and calculates fees.</p>
+        <p><strong>Tech:</strong> Python, OpenCV, MySQL</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Intern Management System</h3>
+        <p>Dashboard for managing intern student data with Spring Boot and React.</p>
+        <p><strong>Tech:</strong> Spring Boot, React, MySQL</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p>Email: <a href="mailto:balaji.al22@bitsathy.ac.in">balaji.al22@bitsathy.ac.in</a></p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="social-links">
+      <a href="#" target="_blank">LinkedIn</a> |
+      <a href="#" target="_blank">GitHub</a>
+    </div>
+    <p>&copy; 2024 Balaji S K M. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToProjects() {
+      document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
